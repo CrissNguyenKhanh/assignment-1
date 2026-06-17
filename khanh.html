@@ -11,6 +11,7 @@
     <form method="post" action="">
         <input type="text" name="name" placeholder="Enter your name">
         <button type="submit">Submit</button>
+        <button type="button" id="goodbyeBtn">Tạm biệt</button>
     </form>
 
     <script>
@@ -24,6 +25,10 @@
             } else {
                 alert('Hello, ' + name + '!');
             }
+        });
+
+        document.querySelector('#goodbyeBtn').addEventListener('click', function() {
+            alert('Goodbye!');
         });
     </script>
 </body>
